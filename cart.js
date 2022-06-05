@@ -34,7 +34,12 @@ const cart = [
 ]
 
 //CODE HERE
-
+const initalValue = 9.99
+const summedPrice = cart.reduce(
+    (previousValue, currentValue) => previousValue + currentValue,
+    initalValue
+)
+console.log(summedPrice)
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
 
