@@ -32,12 +32,12 @@
 
 //CODE HERE
 const pizza = {
-    name : "Hawaiian"
-    price : 10
-    category : "entree"
-    popularity: 5
-    rating: 3
-    tags: ['gluten-free', 'kids']
+    name : "Hawaiian",
+    price : 10,
+    category : "entree",
+    popularity: 5,
+    rating: 3,
+    tags: ['gluten-free', 'kids'],
 }
 
 
@@ -51,13 +51,12 @@ const pizza = {
 */
 
 //CODE HERE
-const pizza = {
-    popularity: 5
-}
 
-const {popularity: HawaiianPop} = pizza
 
-console.log(HawaiianPop)
+
+
+// const {popularity: pizzaPop}= pizza
+// console.log(pizzaPop)
 /*
     Second, log the second tag in your pizza's
     tags array.
@@ -66,6 +65,9 @@ console.log(HawaiianPop)
 */
 
 //CODE HERE
+
+// const {tags: kidsTag } = pizza
+// console.log(kidsTag[1])
 
 
 /*
@@ -77,6 +79,9 @@ console.log(HawaiianPop)
 
 //CODE HERE
 
+// const {pizza: price=10} = {pizza:69};
+
+// console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -84,8 +89,11 @@ console.log(HawaiianPop)
 
     Print the value of your category variable. 
 */
+// const {category: pizzaCat } = pizza
+// console.log(pizzaCat)
 
 //CODE HERE
+
 
 
 //////////////////PROBLEM 3////////////////////
@@ -101,7 +109,14 @@ console.log(HawaiianPop)
 */
 
 //CODE HERE
-
+const foodArr = [
+    name = "Grapes",
+    price = 32,
+    category = "side",
+    popularity =10,
+    rating = 7,
+    tags = ['red', 'green'],
+]
 
 
 //////////////////PROBLEM 4////////////////////
@@ -118,11 +133,20 @@ console.log(HawaiianPop)
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+// const filteredFood = foodArr.filter(foodCat);
+
+// foodArr.filter(function(category) {
+//     return category;
+// });
 
 
 
-//////////////////PROBLEM 5////////////////////
+
+// console.log(foodArr);
+
+
+
+//////////////////PROBLEM 5//////////////////// //come back to problem 5
 /* 
     Now let's write a function that's a little
     more flexible than just filtering for one

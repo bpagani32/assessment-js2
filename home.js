@@ -166,12 +166,12 @@ const deals = [
 
 //CODE HERE
 
-// const index = deals.findIndex((el) => el.desc === '   This deal lasts until the end of March! ')
-// deals[index] = {
-//   title: 'Free Kids Meal with 2 Regular Entrees', 
-//   desc:'This deal lasts until the end of April!',
+const index = deals.findIndex((el) => el.desc === '   This deal lasts until the end of March! ')
+deals[index] = {
+  title: 'Free Kids Meal with 2 Regular Entrees', 
+  desc:'This deal lasts until the end of April!',
   
-// }
-// deals
+}
+deals
 
-// console.log(deals)
+console.log(deals)
