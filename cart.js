@@ -18,28 +18,29 @@
     the food. 
 */
 
-const cart = [
-    {
-        name: 'pizza', 
-        price: 9.99
-    }, 
-    {
-        name: 'pasta', 
-        price: 8.99
-    }, 
-    {
-        name: 'salad', 
-        price: 7.99
-    }
-]
+// const cart = [
+//     {
+//         name: 'pizza', 
+//         price: 9.99
+//     }, 
+//     {
+//         name: 'pasta', 
+//         price: 8.99
+//     }, 
+//     {
+//         name: 'salad', 
+//         price: 7.99
+//     }
+// ]
 
 //CODE HERE
-const initalValue = 9.99
-const summedPrice = cart.reduce(
-    (previousValue, currentValue) => previousValue + currentValue,
-    initalValue
-)
-console.log(summedPrice)
+
+
+// const sum = cart.reduce(function(sum, cart) {
+//     const updatedSum = sum + 9.99;
+//     return updatedSum;
+//   }, 0);
+// console.log(sum)
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
 
@@ -59,7 +60,20 @@ console.log(summedPrice)
 */
 
 //CODE HERE
+//  const purchase = [
+//      cartTotal = 29.97,
+//      couponValue = -2,
+//      tax = (1.80),
+//  ]
 
+// function calcFinalPrice(purchase) {
+    
+//     return (tax + cartTotal) + couponValue
+
+
+// }
+
+// console.log(calcFinalPrice(purchase));
 
 
 //////////////////PROBLEM 3////////////////////
@@ -84,6 +98,10 @@ console.log(summedPrice)
 
 /*
     TEXT ANSWER HERE
+    //first their name
+    //party size
+    //drinks
+    //orders
 
 */
 
@@ -93,3 +111,11 @@ console.log(summedPrice)
 */
 
 //CODE HERE
+
+// const restaurantOrder = {
+//     name: 'bob',
+//     partySize:2,
+//     drinks: ('water' , 'coke'),
+//     orders:('steak', 'chicken'),
+// }
+// console.log(restaurantOrder)
