@@ -20,6 +20,21 @@
 */
 
 //CODE HERE
+// class Employee{
+//     constructor(name, shifts) {
+//       this.name = name;
+//       this.shifts = shifts;
+
+//       return getSchedule`${name} works on ${shifts}`();
+//     }
+//   }
+  
+//   getSchedule(John, Monday) ;
+    
+  
+//   const person = new Employee(John, Monday)
+//   console.log(getSchedule);
+
 
 
 
