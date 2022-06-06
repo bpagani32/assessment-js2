@@ -55,7 +55,7 @@ const pizza = {
 
 
 
-// const {popularity: pizzaPop}= pizza
+// const pizzaPop =pizza.popularity
 // console.log(pizzaPop)
 /*
     Second, log the second tag in your pizza's
@@ -109,7 +109,8 @@ const pizza = {
 */
 
 //CODE HERE
-const foodArr = [
+const foodArr = {
+[
     name = "Grapes",
     price = 32,
     category = "side",
@@ -117,8 +118,31 @@ const foodArr = [
     rating = 7,
     tags = ['red', 'green'],
 ]
+        name = "Grapes",
+        price = 32,
+        category = "side",
+        popularity =10,
+        rating = 7,
+        tags = ['red', 'green'],
+    ],
 
+            name = "Grapes",
+            price = 32,
+            category = "side",
+            popularity =10,
+            rating = 7,
+            tags = ['red', 'green'],
 
+  
+                name = "Grapes",
+                price = 32,
+                category = "side",
+                popularity =10,
+                rating = 7,
+                tags = ['red', 'green'],
+            ]
+                        
+        }
 //////////////////PROBLEM 4////////////////////
 /* 
     Let's filter the food objects according
@@ -133,11 +157,12 @@ const foodArr = [
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(foodCat);
+// function callback(element) {
+//     return element.tagsincludes('popular')
+// }
 
-// foodArr.filter(function(category) {
-//     return category;
-// });
+// const filteredFood = foodArr.filter(callback)
+
 
 
 
@@ -187,6 +212,18 @@ const foodArr = [
 
 //CODE HERE
 
+const filterByProperty = function(property,number,type) {
+    const filteredArr = foodArr.filter(() => {
+        if (type === 'above') {
+            return element[property] > number
+
+        } else if (type === 'below'){
+            return element[property] < number
+        }
+    })
+    return filteredArr
+}
+console.log(filterByProperty('price', 5, 'below'))
 
 /*
     Invoke the `filterByProperty` function passing

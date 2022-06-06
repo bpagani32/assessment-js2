@@ -18,29 +18,29 @@
     the food. 
 */
 
-// const cart = [
-//     {
-//         name: 'pizza', 
-//         price: 9.99
-//     }, 
-//     {
-//         name: 'pasta', 
-//         price: 8.99
-//     }, 
-//     {
-//         name: 'salad', 
-//         price: 7.99
-//     }
-// ]
+const cart = [
+    {
+        name: 'pizza', 
+        price: 9.99
+    }, 
+    {
+        name: 'pasta', 
+        price: 8.99
+    }, 
+    {
+        name: 'salad', 
+        price: 7.99
+    }
+]
 
 //CODE HERE
 
 
-// const sum = cart.reduce(function(sum, cart) {
-//     const updatedSum = sum + 9.99;
-//     return updatedSum;
-//   }, 0);
-// console.log(sum)
+const sum = cart.reduce(function(sum, cart) {
+    const updatedSum = sum + 9.99;
+    return updatedSum;
+  }, 0);
+console.log(sum)
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
 
