@@ -41,6 +41,29 @@ const sum = cart.reduce(function(sum, cart) {
     return updatedSum;
   }, 0);
 console.log(sum)
+ 
+
+//my answer compared to Jared's
+
+
+// const sum = cart.reduce(function(sum, cart) {
+//     const updatedSum = sum + 9.99;
+//     return updatedSum;
+//   }, 0);
+// console.log(sum)
+
+
+// function callbackFunction(preValue, currentValue){
+//     return preValue + currentValue.price
+// }
+// const newCartArray = cart.reduce(callbackFunction, 0)
+// console.log(sumPrice)
+
+// function callbackFunction(preValue, currentValue){
+//     return preValue + currentValue.price
+// }
+// const newCartArray = cart.reduce(callbackFunction, 0)
+// console.log(summedPrice)
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
 
@@ -60,22 +83,15 @@ console.log(sum)
 */
 
 //CODE HERE
-//  const purchase = [
-//      cartTotal = 29.97,
-//      couponValue = -2,
-//      tax = (1.80),
-//  ]
-
-// function calcFinalPrice(purchase) {
-    
-//     return (tax + cartTotal) + couponValue
 
 
+
+// function calcFinalPrice(cartTotal, couponValue, tax){
+//     let total= cartTotal + (tax * cartTotal) - couponValue
+//     return total
 // }
 
-// console.log(calcFinalPrice(purchase));
-
-
+// console.log(calcFinalPrice(5,1,.05))
 //////////////////PROBLEM 3////////////////////
 /*  
     In this problem, you'll create a model for 

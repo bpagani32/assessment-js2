@@ -89,8 +89,8 @@ const pizza = {
 
     Print the value of your category variable. 
 */
-// const {category: pizzaCat } = pizza
-// console.log(pizzaCat)
+const {category} = pizza
+console.log(category)
 
 //CODE HERE
 
@@ -109,40 +109,50 @@ const pizza = {
 */
 
 //CODE HERE
-const foodArr = {
-[
-    name = "Grapes",
-    price = 32,
-    category = "side",
-    popularity =10,
-    rating = 7,
-    tags = ['red', 'green'],
-]
-        name = "Grapes",
-        price = 32,
-        category = "side",
-        popularity =10,
-        rating = 7,
-        tags = ['red', 'green'],
-    ],
+// const foodArr = [
+//     {
+//         name: 'Flat iron Steak',
+//         price: 7,
+//         category: 'entree',
+//         popularity: 9.5,
+//         rating: 7,
+//         tags: ['family', 'popular', 'high sodium'],
+//     },
+//     {
+//         name: 'Caesar Salad',
+//         price: 5,
+//         category: 'side',
+//         popularity: 7,
+//         rating: 10,
+//         tags: ['Upcharge', 'healthy', 'popular'],
+//     },
+//     {
+//         name: 'House Margerita',
+//         price: 5,
+//         category: 'beverage',
+//         popularity: 10,
+//         rating: 10,
+//         tags: ['Limited', 'popular', 'Adult'],
+//     },
+//     {
+//         name: 'Chips and Queso',
+//         price: 0,
+//         category: 'appetizer',
+//         popularity: 7,
+//         rating: 9,
+//         tags: ['free', 'high sodium'],
+//     },
+//     {
+//         name: 'Hot Fudge Sundae',
+//         price: 2.5,
+//         category: 'desert',
+//         popularity: 2,
+//         rating: 9,
+//         tags: ['family', 'unpopular', 'high sugar'],
+//     }
+// ]
 
-            name = "Grapes",
-            price = 32,
-            category = "side",
-            popularity =10,
-            rating = 7,
-            tags = ['red', 'green'],
 
-  
-                name = "Grapes",
-                price = 32,
-                category = "side",
-                popularity =10,
-                rating = 7,
-                tags = ['red', 'green'],
-            ]
-                        
-        }
 //////////////////PROBLEM 4////////////////////
 /* 
     Let's filter the food objects according
@@ -162,7 +172,7 @@ const foodArr = {
 // }
 
 // const filteredFood = foodArr.filter(callback)
-
+// console.log(filterFood)
 
 
 
@@ -212,18 +222,18 @@ const foodArr = {
 
 //CODE HERE
 
-const filterByProperty = function(property,number,type) {
-    const filteredArr = foodArr.filter(() => {
-        if (type === 'above') {
-            return element[property] > number
+// const filterByProperty = function(property,number,type) {
+//     const filteredArr = foodArr.filter(() => {
+//         if (type === 'above') {
+//             return element[property] > number
 
-        } else if (type === 'below'){
-            return element[property] < number
-        }
-    })
-    return filteredArr
-}
-console.log(filterByProperty('price', 5, 'below'))
+//         } else if (type === 'below'){
+//             return element[property] < number
+//         }
+//     })
+//     return filteredArr
+// }
+// console.log(filterByProperty('price', 5, 'below'))
 
 /*
     Invoke the `filterByProperty` function passing
@@ -233,3 +243,4 @@ console.log(filterByProperty('price', 5, 'below'))
 */
 
 //CODE HERE
+// console.log(filterByProperty('popularity', 4, 'below'))
