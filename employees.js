@@ -11,7 +11,6 @@
     Create a new class called `Employee`.
     Make sure to call your constructor, and 
     require these 2 parameters: name, shifts.
-
     Create a method on the class called 
     `getSchedule` that prints a string:
     [NAME] works on [SHIFTS]
@@ -20,28 +19,21 @@
 */
 
 //CODE HERE
-// class Employee{
-//     constructor(name, shifts) {
-//       this.name = name;
-//       this.shifts = shifts;
+class Employee {
+    constructor(name, shifts) {
+        this.name = name
+        this.shifts = shifts
+    }
 
-//       return getSchedule`${name} works on ${shifts}`();
-//     }
-//   }
-  
-//   getSchedule(John, Monday) ;
-    
-  
-//   const person = new Employee(John, Monday)
-//   console.log(getSchedule);
-
-
+    getSchedule() {
+        console.log(`${this.name} works on ${this.shifts}`)
+    }
+}
 
 
 /*
     Create a new instance of your class.
     Save it to a variable called `empOne`.
-
     You can use this sample data or make
     up your own:
     name: Jess
@@ -49,6 +41,7 @@
 */
 
 //CODE HERE
+const empOne = new Employee('Jared', 'weekday mornings, weekend afternoons')
 
 /*
     Call the `getSchedule` method on the
@@ -56,31 +49,27 @@
 */
 
 //CODE HERE
-class Employee{
-    constructor(name, shifts) {
-        this.name = name
-        this.shifts= shifts
-    }
-    getSchedule(){
-        console.log(`${this.name} works on ${this.shifts}`)
-    }
-}
-
+//empOne.getSchedule()
 
 /*
     Make a copy of the empOne object
     using the spread operator.
     Save it to a variable called `empTwo`.
-
     Change the name of `empTwo` to 'Nick'.
-
     Hint: you can do this inline with the 
     spread operator or reassign it using 
     dot or bracket notation.
 */
 
 //CODE HERE
-const empOne = new Employee('Brian', 'weekday mornings', 'weekend afternoons')
+//const empTwo = {...empOne}
+//console.log(empTwo)
+//console.log(empOne)
+//empTwo.name = "Nick"
+
+//let's try this inline with the spread operator
+const empTwo = {...empOne, name: 'Nick'}
+//console.log(empTwo)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -91,13 +80,11 @@ const empOne = new Employee('Brian', 'weekday mornings', 'weekend afternoons')
     new one: employees, which will be an array of 
     employees that report to this manager. 
     (Hint: don't forget to call the super function)
-
     Create a method called `getEmployees` that
     console.logs a string:
     [NAME] manages [EMPLOYEES]
     Where NAME and EMPLOYEES reference the values
     stored on the object.
-
     Create a second method called `addEmployee`
     that takes in one argument, `emp`, which
     should be a string of an employee name.
@@ -106,13 +93,25 @@ const empOne = new Employee('Brian', 'weekday mornings', 'weekend afternoons')
 */
 
 //CODE HERE
+class Manager extends Employee {
+    constructor(name, shifts, employees) {
+        super(name, shifts)
+        this.employees = employees
+    }
 
+    getEmployees() {
+        console.log(`${this.name} manages ${this.employees}`)
+    }
+
+    addEmployee(emp) {
+        this.employees.push(emp)
+    }
+}
 
 
 /*
     Create a new instance of your class.
     Save it to a variable called `manager`.
-
     You can use this sample data or make
     up your own:
     name: Winston
@@ -121,22 +120,17 @@ const empOne = new Employee('Brian', 'weekday mornings', 'weekend afternoons')
 */
 
 //CODE HERE
+const manager = new Manager('Johnny','all day every day',['Sam','Bill'])
 
-empOne.getSchedule()
+
 /*
     Call the `getEmployees` method on the
     `manager` object.  
 */
 
 //CODE HERE
-const empTwo= {...empOne}
-console.log(empTwo)
-console.log(empOne)
+manager.getEmployees()
 
-empTwo.name = "Nick"
-
-const empTwo = {...empOne, name:"Nick"}
-console.log(empTwo)
 /*
     Call the `addEmployee` method on the 
     `manager` object passing in the string 
@@ -144,22 +138,8 @@ console.log(empTwo)
 */
 
 //CODE HERE 
-class Manager extends Employee {
-    constructor(name, shifts, employees) {
-        super(name,shifts)
-        this.employees = employees
+manager.addEmployee('Sarah')
 
-    }
-    getEmployees() {
-        console.log(`${this.name} manages ${this.employees}`)
-    }
-    addEmployee(emp) {
-        this.employees.push(emp)
-    }
-}
-
-const manager = new Manager('Joe', 'Mondays and Tuesdays', ('Sean', 'Kevin'))
-manager.getEmployees()
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 
@@ -167,6 +147,4 @@ manager.getEmployees()
 */
 
 //CODE HERE
-
-manager.addEmployee('Jamie')
 manager.getEmployees()
